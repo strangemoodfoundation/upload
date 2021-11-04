@@ -2,6 +2,13 @@
 
 An extremely simple web app that handles uploading files of any type to an s3 compatible server. Currently implemented for Backblaze. It's the cheapest for large file storage.
 
+Frontend requests a signed url from the backend, and uses that to PUT the request directly to the bucket. This means this lightweight server never touches the file.
+
+<a href="https://www.loom.com/share/45b67438f10844508772aa5ed0e31f62">
+    <p>Uploading Demo</p>
+    <img style="max-width:100%" src="https://cdn.loom.com/sessions/thumbnails/45b67438f10844508772aa5ed0e31f62-with-play.gif">
+  </a>
+
 ## Running
 
 This is a monorepo with backend in express and frontend in react typescript.
